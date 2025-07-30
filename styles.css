@@ -1,0 +1,215 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Tools Dropdown */
+.tools-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.tools-menu .dropdown {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    list-style: none;
+}
+
+.tools-menu:hover .dropdown {
+    display: block;
+}
+
+.tools-menu .dropdown li {
+    margin: 0.5rem 0;
+}
+
+.tools-menu .dropdown li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.tools-menu .dropdown li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+main h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+main p {
+    margin-bottom: 1rem;
+}
+
+main ul {
+    list-style: disc;
+    margin: 1rem 2rem;
+}
+
+main .blog-post {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+main .blog-post .date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+main .blog-post a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+main .blog-post a:hover {
+    text-decoration: underline;
+}
+
+/* Form Elements (for jpg-to-pdf.html) */
+form {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+form .upload-area {
+    border: 2px dashed #ddd;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+form select, form input[type="range"], form button {
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+form button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    background: #f8f9fa;
+    padding: 2rem 1rem;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+footer .footer-content div {
+    margin: 1rem;
+}
+
+footer .footer-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+footer .footer-content ul {
+    list-style: none;
+}
+
+footer .footer-content ul li {
+    margin: 0.5rem 0;
+}
+
+footer .footer-content ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer .footer-content ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .copyright {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
